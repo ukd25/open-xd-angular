@@ -1,0 +1,189 @@
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.align-items-center{
+    align-items: center;
+}
+.position-fixed{
+    position: fixed;
+}
+.position-absolute{
+    position: absolute;
+}
+.position-relative{
+    position: relative;
+}
+.max-width-large{
+    max-width: 1300px;
+}
+.max-width-m{
+    max-width: 1200px;
+}
+.mx-auto{
+    margin: auto;
+}
+.col-6{
+    flex-basis: 50%;
+}
+.col-5{
+    flex-basis: 42%;
+}
+.col-7{
+    flex-basis: 58%;
+}
+.col-55{
+    flex-basis: 55%;
+}
+.col-45{
+    flex-basis: 45%;
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.m-0{
+    margin: 0px !important;
+}
+.p-20{
+    padding-top: 15px;
+}
+.px-8{
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+
+.card-div{
+    width: 280px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 30px #2321321F;
+    border: 1px solid #FFFFFF;
+    &:hover{
+    background-image: url('../assets/Rectangle\ 2.svg');
+    background-position: center center;
+    opacity: .8;
+    border: 1px solid transparent;
+    cursor: pointer;
+    & .card-title{
+        color: #fff;
+    }
+    & .card-description p{
+        color: #fff;
+    }
+    }
+    & .img-icond-div{
+        padding: 20px 20px;
+        & img{
+            width: 65px;
+            height: 65px;
+        }
+    }
+    & .card-title{
+            padding: 0px 20px;
+            font-size: 15px;
+            line-height: 19px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+    }
+    & .card-description{
+        padding: 5px 20px 20px 20px;
+        p{
+            font-size: 15px;
+            line-height: 19px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #999999;
+            margin: 0px;
+        }
+    }
+}
+
+.minus-margin{
+   margin-top: -10px;
+}
+.py-1{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.height-40{
+    height: 40px !important;
+}
+
+.mat-form-field-flex{
+    background-color: transparent !important;
+}
+
+mat-select{
+    & label{
+        font-size: 20px;
+        line-height: 19px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: #000;
+        margin: 0px;
+    }
+}
+
+/* CSS to change Default/'Accent' color */
+
+// ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+//     background-color: #663399 !important;/*replace with your color*/
+// }
+
+// ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+//     background-color: #9F62C9 !important; /*replace with your color*/
+// }
+
+// /* CSS to change 'Primary' color */
+
+// ::ng-deep .mat-slide-toggle.mat-primary.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+//     background-color: #663399 !important;
+// }
+
+// ::ng-deep .mat-slide-toggle.mat-primary.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+//     background-color: #663399 !important;
+// }
+
+// /* CSS to change 'Warn' color */
+
+// ::ng-deep .mat-slide-toggle.mat-warn.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+//     background-color: #663399 !important;
+// }
+
+// ::ng-deep .mat-slide-toggle.mat-warn.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+//     background-color: #663399 !important;
+// }
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: #9F62C9!important;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{
+    background-color: #663399 !important;
+}
+.mat-slider-thumb, .mat-slider-ticks{
+    background-color: #663399 !important;
+}

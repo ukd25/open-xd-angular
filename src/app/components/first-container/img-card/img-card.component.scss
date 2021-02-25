@@ -1,0 +1,38 @@
+.outer-div-img-card{
+    padding-bottom: 60px;
+    & .small-circle{
+        transform: scale(0.65);
+        left: -47%;
+        top: -11%;
+        z-index: 1;
+    }
+    & .img-card-header{
+        padding: 30px;
+        padding-top: 80px;
+        z-index: 2;
+        & h1{
+            width: 268px;
+            line-height: 1.2;
+            font: 400 35px/38px "Open Sans", sans-serif;
+        }
+        & .underline-div{
+            width: 120px;
+            height: 6px;
+            border-radius: 10px;
+            background: #000000 0% 0% no-repeat padding-box;
+        }
+        padding-bottom: 50px;
+    }
+    & .img-card-div{
+        z-index: 2;
+        & .img-card{
+            width:500px;
+            height: 300px;
+        }
+    }
+    & .left-dots{
+        transform: scale(0.8);
+        bottom: 2%;
+        left: 30%;
+    }
+}

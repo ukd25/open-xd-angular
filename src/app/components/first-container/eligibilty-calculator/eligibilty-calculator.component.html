@@ -1,0 +1,67 @@
+<div class="outer-div-eligibility-calculator d-flex justify-content-end position-relative w-100 h-100">
+    <img class="large-circle position-absolute" src="../../../../assets/circle.svg">
+    <div class="elibility-loan-amount-div d-flex align-items-center">
+       <div class="eligibilty-calculator-div">
+           <div class="eligibility-calculator-header">
+               Eligibility Calculator
+           </div>
+           <div class="eligibility-calculator-body">
+               <div class="monthly-income d-flex flex-column p-20">
+                <p class="m-0 px-8">Monthly Income</p>
+                <div class="monthly-income-value px-8 py-1">
+                 ₹ {{monthlyIncome}}
+                </div>
+                <mat-slider class="minus-margin height-40" [(ngModel)]="monthlyIncome" tickInterval="1000" min="100000" max="300000"></mat-slider>
+                <div class="min-max-div d-flex justify-content-between px-8">
+                    <div class="min-value">₹ 1,00,000</div>
+                    <div class="max-value">₹ 3,00,000</div>
+                </div>
+               </div>
+               <div class="monthly-expense d-flex flex-column p-20">
+                <p class="m-0 px-8">Monthly Expense</p>
+                <div class="monthly-income-value px-8 py-1">
+                    ₹ {{monthlyExpense}}
+                   </div>
+                <mat-slider class="minus-margin height-40" [(ngModel)]="monthlyExpense" tickInterval="1000" min="10000" max="50000"></mat-slider>
+               </div>
+               <div class="repayment-tenure d-flex flex-column p-20">
+                <p class="m-0 px-8">Repayment Tenure</p>
+                <mat-form-field appearance="fill">
+                    <mat-label>6 Months</mat-label>
+                    <mat-select>
+                      <mat-option >3 Months</mat-option>
+                      <mat-option >9 Months</mat-option>
+                      <mat-option >12 Months</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+               </div>
+               <div class="loan-option-btn d-flex justify-content-between p-20">
+                <p class="m-0 px-8">Do you have any existing loans?</p>
+                <mat-slide-toggle></mat-slide-toggle>
+               </div>
+               <div class="loan-emi d-flex flex-column p-20">
+                <p class="m-0 px-8">EMI of existing loan (optional)</p>
+                <form class="inputbox w-100 minus-margin">
+                    <mat-form-field class="">
+                        <input matInput placeholder="" value="₹ 15,000">
+                      </mat-form-field>
+                </form>
+               </div>
+           </div>
+       </div>
+       <div class="loan-amount-div justify-content-between">
+           <div class="loan-amount d-flex flex-column">
+               <div class="loan-amount-header">Loan Amount</div>
+               <div class="loan-amount-number">₹1,00,000</div>
+           </div>
+        <div class="loan-amount d-flex flex-column">
+            <div class="loan-amount-header">You EMI will be</div>
+            <div class="loan-amount-number">₹ 15,000</div>
+        </div>
+        <div class="button-div d-flex justify-content-center">
+            <button>Get Money</button>
+        </div>
+       </div>
+    </div>
+    <img class="right-dots position-absolute" src="../../../../assets/accounting_dots.svg">
+</div>

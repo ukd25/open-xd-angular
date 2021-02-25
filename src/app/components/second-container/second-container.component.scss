@@ -1,0 +1,11 @@
+.second-section{
+    padding-top: 60px;
+    overflow: hidden;
+    & .second-section-img{
+        z-index: 1;
+    }
+    & .cards-component, .business-cta-component{
+        z-index: 2;
+    }
+    padding-bottom: 50px;
+}

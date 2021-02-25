@@ -1,0 +1,9 @@
+.card-container-div{
+    z-index: 2;
+    & .first-column{
+        padding-right: 10px;
+    }
+    & .second-column{
+        padding-left: 10px;
+    }
+}

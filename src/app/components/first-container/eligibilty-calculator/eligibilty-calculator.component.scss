@@ -1,0 +1,112 @@
+.outer-div-eligibility-calculator{
+    padding-bottom: 40px;
+    z-index: 2;
+    & .large-circle{
+        right: -38%;
+        top: -69%;
+        transform: scale(0.76);
+    }
+    & .elibility-loan-amount-div{
+        height: 560px;
+        width: 540px;
+        z-index: 2;
+        padding-top: 60px;
+       & .eligibilty-calculator-div{
+            background-color: #fff;
+            height: 535px;
+            border-radius: 10px;
+            width: 350px;
+          & .eligibility-calculator-header{
+              background-color: #FCFCFF;
+              color: #000;
+              font: normal normal normal 18px/30px Open Sans;
+              padding: 10px 0 10px 0;
+              text-align: center;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+          }
+          & .eligibility-calculator-body{
+              padding: 0px 20px 0px 20px;
+          }
+       }
+       & .loan-amount-div{
+           width: 200px;
+           background-color: #663399;
+           height: 217px;
+           border-top-right-radius: 10px;
+           border-bottom-right-radius: 10px;
+           margin-left: 5px;
+           box-shadow: 0px 0px 20px #00000033;
+           padding: 80px 0px 60px 0px;
+           & .loan-amount{
+               padding: 0px 20px 20px;
+               & .loan-amount-header{
+                   color: #e2d1f3;
+                   text-align: center;
+                   font: normal normal normal 18px/30px Open Sans;
+               }
+               & .loan-amount-number{
+                   color: #fff;
+                   text-align: center;
+                   font: normal normal normal 20px/30px Open Sans;
+               }
+           }
+           & .button-div{
+               padding-top: 10px;
+               button{
+                background: #fff;
+                box-shadow: 0px 0px 20px #00000033;
+                border-radius: 24px;
+                color: #663399; 
+                height: 45px;
+                border: none;
+                padding: 0px 25px 0px 25px;
+                outline: none;
+                cursor: pointer;
+               }
+           }
+       }
+    }
+    & .right-dots{
+        transform: scale(0.8);
+        bottom: 7%;
+        right: -12%;
+    }
+    & .monthly-income, .monthly-expense, .repayment-tenure, .loan-option-btn, .loan-emi{
+        & p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+    & .monthly-income-value{
+        font-size: 20px;
+        line-height: 19px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: #000;
+        margin: 0px;
+    }
+    & .min-max-div{
+        & div {
+          color: #999999;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 10px;
+        }
+    }
+    & .inputbox{
+        display: flex;
+        justify-content: center;
+        & .mat-form-field {
+            width: 95%;
+            & input{
+                font-size: 20px;
+                line-height: 19px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                color: #000;
+                margin: 0px;
+            }
+        }
+    }
+}
